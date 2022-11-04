@@ -1,0 +1,485 @@
+/* ***************************************
+        Bloc central
+*****************************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #154284;
+}
+
+.slidershow {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+.middle {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  transition: 0.5s;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover {
+  background-color: #fff;
+}
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+.logo_header {
+  border-radius: 50%;
+  max-width: 150px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p,
+li,
+a,
+input,
+select,
+button {
+  font-family: "Roboto", sans-serif;
+}
+button {
+  border-radius: 100px;
+  border-width: 5px;
+  letter-spacing: 1px;
+  padding-right: 2em;
+  padding-left: 0.7em;
+  font-weight: bold;
+}
+
+button a {
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+main a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+/* ***************************************
+        HEADER
+****************************************** */
+header {
+  display: flex;
+  background-color: #cd122d;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: auto;
+}
+
+header a {
+  color: #111;
+  text-decoration: none;
+}
+
+.logo_plateforme {
+  width: 50%;
+  height: auto;
+}
+
+nav {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.liste_liens {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+/* ***************************************
+        PREMIER BLOC (ACCROCHE)
+****************************************** */
+.accroche {
+  display: flex;
+  flex-direction: row;
+  background-color: #154284;
+  font-size: 25px;
+  color: #ffffff;
+  padding-bottom: 2%;
+}
+
+.info_accueil {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.red_button {
+  border-color: #cd122d;
+  background-color: #cd122d;
+  font-size: 22px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+
+/* ***************************************
+        DEUXIEME BLOC (INFORMATIONS)
+****************************************** */
+.informations {
+  background-color: #fefeff;
+  color: #336699;
+  margin-bottom: 3%;
+}
+
+.informations h1,
+p,
+em,
+h2,
+h3 {
+  text-align: center;
+}
+
+.image_centrer {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_jaune {
+  border-color: #ffca4b;
+  background-color: #ffca4b;
+  font-size: 16px;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+
+.boite_horizontale {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 5.5%;
+  margin-left: 5.5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: transparent;
+  box-shadow: 0px 0px 60px 0px rgb(71 74 182 / 12%);
+  border-radius: 10px;
+}
+
+/* ***************************************
+        FOOTER
+****************************************** */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #313131;
+  color: #f2ffff;
+  padding-top: 2%;
+}
+footer a {
+  color: #f2ffff;
+  text-decoration: none;
+}
+
+.logos {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 20%;
+}
+
+.reseaux {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.reseaux a {
+  margin-right: 8px;
+}
+
+.logo_footer {
+  width: 100%;
+  height: auto;
+}
+
+.info_pratique {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-basis: 85%;
+}
+
+.liste {
+  padding-top: 0;
+  font-size: 16px;
+}
+.liste ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bouton_noir {
+  border-color: #ffffff;
+  background-color: #2f2f2f;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 1px;
+  border-width: 2px;
+}
+
+.footer_2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  color: #f2ffff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.centrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Formulaire de contact */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+}
+
+#nav {
+  padding: 0;
+  margin: 0;
+  text-align: center; /* centrer le texte */
+  background-color: #cd122d;
+}
+
+#nav li {
+  display: inline;
+  list-style: none;
+}
+
+#nav a {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.bouton_bleu {
+  border-color: #154284;
+  background-color: #154284;
+  font-size: 16px;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-top: 2%;
+}
+
+.bouton_bleu:hover {
+  background-color: #fff;
+}
+
+.contact-section {
+  background: url(foot3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+
+.contact-section h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.border {
+  width: 100px;
+  height: 10px;
+  background: #111;
+  margin: 40px auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  background: #fff;
+  margin: auto;
+  padding: 0 30px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.contact-form-text:hover {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 150px;
+}
+
+.contact-form-btn {
+  float: right;
+  border-radius: 20px;
+  border: 30;
+  background: #111;
+  padding: 20px 40px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.contact-form-btn:hover {
+  background: #154284;
+}
+
+/* ***************************************
+        Page equipe ***************/
+
+.diveffectif {
+  display: flex;
+  height: 100%;
+}
+
+.diveffectif1 {
+  background: #cd122d;
+  height: auto;
+  width: 20%;
+  color: #fff;
+}
+
+.diveffectif2 {
+  height: auto;
+  width: 80%;
+  margin-left: 5%;
+  color: #fff;
+  margin-right: 5%;
+}
+
+.diveffectif2_1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.listeEffectif {
+  list-style: none;
+}
+
+.listeJoueurs {
+  list-style: disc;
+}
+
+.joueurs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photoJoueur {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 0, 0));
+}
